@@ -22,5 +22,6 @@
 3. **Induction is the process of one individual passing a trait or behavior on to their friends, whether by active encouragement or by setting an example**
 4. [**Networkx**](https://networkx.org/documentation//networkx-1.10/reference/algorithms.html) **- Centrality is just a fraction of the algorithms contained in networkx.**
 
-![](https://lh3.googleusercontent.com/Z2U_f5O_A407pAxkfZzNLMDjm0LZbFa4bDs2qddvSE2HQ-UbaXHAMRAylOhM7AgblncrxGKHzFvT31O96jKfJ2QgxHK7ntItXsbOxEdlt8eL1HlLUKvvo1tG6kT-txQuxMyAYEif)[**Social Network analysis from theory to applications**](https://towardsdatascience.com/social-network-analysis-from-theory-to-applications-with-python-d12e9a34c2c7) **-** [**dima goldenberg**](https://www.linkedin.com/in/dimgold/)
+![](https://lh3.googleusercontent.com/Z2U_f5O_A407pAxkfZzNLMDjm0LZbFa4bDs2qddvSE2HQ-UbaXHAMRAylOhM7AgblncrxGKHzFvT31O96jKfJ2QgxHK7ntItXsbOxEdlt8eL1HlLUKvvo1tG6kT-txQuxMyAYEif)  
+[**Social Network analysis from theory to applications**](https://towardsdatascience.com/social-network-analysis-from-theory-to-applications-with-python-d12e9a34c2c7) **-** [**dima goldenberg**](https://www.linkedin.com/in/dimgold/)
 

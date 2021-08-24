@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Initial page](README.md)
+* [Credit Where Credits Due](credit-where-credits-due.md)
 
 ## ML & DL
 
