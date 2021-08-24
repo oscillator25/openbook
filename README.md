@@ -1,1 +1,2 @@
-# openbook
+# Initial page
+
