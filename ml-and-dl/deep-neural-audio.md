@@ -6,7 +6,7 @@
 4. [**speech recognition with DL -**](https://medium.com/@ageitgey/machine-learning-is-fun-part-6-how-to-do-speech-recognition-with-deep-learning-28293c162f7a) **how to convert sounds to vectors, feeding into an RNN.**
 5. **\(Great\)** [**Jonathan Hui on speech recognition**](https://medium.com/@jonathan_hui/speech-recognition-series-71fd6784551a) **- series.**
 
-### **Tools**
+## **Tools**
 
-[**Gecko**](https://medium.com/gong-tech-blog/introducing-gecko-an-open-source-solution-for-effective-annotation-of-conversations-2ecec0909941) **-  \(**[**github.com/gong-io/gecko**](https://github.com/gong-io/gecko)**\)** [**youtube**](https://www.youtube.com/watch?v=CBYA0YC1NBI)**, is an open-source tool for the annotation of the linguistic content of conversations. It can be used for segmentation, diarization, and transcription. With Gecko, you can create and perfect audio-based datasets, compare the results of multiple models simultaneously, and highlight differences between transcriptions.**
+[**Gecko**](https://medium.com/gong-tech-blog/introducing-gecko-an-open-source-solution-for-effective-annotation-of-conversations-2ecec0909941) **- \(**[**github.com/gong-io/gecko**](https://github.com/gong-io/gecko)**\)** [**youtube**](https://www.youtube.com/watch?v=CBYA0YC1NBI)**, is an open-source tool for the annotation of the linguistic content of conversations. It can be used for segmentation, diarization, and transcription. With Gecko, you can create and perfect audio-based datasets, compare the results of multiple models simultaneously, and highlight differences between transcriptions.**
 

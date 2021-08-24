@@ -35,5 +35,5 @@
 7. [ml-ops.org](https://ml-ops.org/)
 8. [Awesome production ML](https://github.com/EthicalML/awesome-production-machine-learning/)
 
-![Awesome production ML](.gitbook/assets/image.png)
+![Awesome production ML](https://github.com/oscillator25/openbook/tree/a95dce24bb06315e55d6e2af83cb5fe758236a6e/ml-and-dl/.gitbook/assets/image.png)
 

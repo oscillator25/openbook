@@ -1,13 +1,13 @@
 # Label Algorithms
 
-### Unbalanced labels
+## Unbalanced labels
 
 1. [imbalance learn](https://imbalanced-learn.org/stable/auto_examples/over-sampling/plot_comparison_over_sampling.html#sphx-glr-auto-examples-over-sampling-plot-comparison-over-sampling-py) - is an open-source, MIT-licensed library that provides tools when dealing with classification with imbalanced classes. 
 2. [Classifying Job Titles With Noisy Labels Using REINFORCE ](https://medium.com/@ziprecruiter.engineering/classifying-job-titles-with-noisy-labels-using-reinforce-ce1a4bde05e2)this article has a very nice trick in adding a reward component to the loss function in order to mitigate for unbalanced class label problem, instead of the usual balancing.
 
-![Imbalance Learn comparison](.gitbook/assets/image%20%282%29.png)
+![Imbalance Learn comparison](https://github.com/oscillator25/openbook/tree/a95dce24bb06315e55d6e2af83cb5fe758236a6e/ml-and-dl/.gitbook/assets/image%20%282%29.png)
 
-### **Label Propagation / Spreading**
+## **Label Propagation / Spreading**
 
 **Note: very much related to weakly and semi supervision, i.e., we have small amounts of labels and we want to generalize the labels to other samples, see also weak supervision methods.**
 
@@ -32,10 +32,8 @@
    3. **Partially Absorbing Random Walk \(PARW\) \[Wu+, NIPS12\]**
    4. **OMNI-Prop \(OMNIProp\) \[Yamaguchi+, AAAI15\]**
    5. **Confidence-Aware Modulated Label Propagation \(CAMLP\) \[Yamaguchi+, SDM16\]**
-3. 
-![](https://lh6.googleusercontent.com/O7nhJu4DU47zpTRkJy53CloKGW6Msk7jZIhMdsI3VePsRgzJji3XCG0Nmlpv4F3rBmb4eS-fTRMUyuTfwaHE9k687ScSFYQmadOkIKRNaRMBvW-PiRs1vGeINYTV8uYZ3tjmcdRk)
-
-1. **Presentation** [**1**](http://www.leonidzhukov.net/hse/2015/networks/lectures/lecture17.pdf)**,**[**2** ](https://www.slideshare.net/dav009/label-propagation-semisupervised-learning-with-applications-to-nlp)
+3. ![](https://lh6.googleusercontent.com/O7nhJu4DU47zpTRkJy53CloKGW6Msk7jZIhMdsI3VePsRgzJji3XCG0Nmlpv4F3rBmb4eS-fTRMUyuTfwaHE9k687ScSFYQmadOkIKRNaRMBvW-PiRs1vGeINYTV8uYZ3tjmcdRk)
+4. **Presentation** [**1**](http://www.leonidzhukov.net/hse/2015/networks/lectures/lecture17.pdf)**,**[**2** ](https://www.slideshare.net/dav009/label-propagation-semisupervised-learning-with-applications-to-nlp)
 
 **Neo4j** [**1**](https://dzone.com/articles/graph-algorithms-in-neo4j-label-propagation)**, 2, 3,**
 

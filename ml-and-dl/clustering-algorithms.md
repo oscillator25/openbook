@@ -1,7 +1,7 @@
 # Clustering Algorithms
 
 1. [**Vidhya on clustering and methods**](https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-clustering-and-different-methods-of-clustering/?utm_source=facebook.com)
-2. [**KNN**](https://www.youtube.com/watch?v=4ObVzTuFivY) ****[**intuition 2**](https://www.youtube.com/watch?v=UqYde-LULfs)**,** [**thorough explanation 3**](https://towardsdatascience.com/introduction-to-k-nearest-neighbors-3b534bb11d26)  **- classify a new sample by looking at the majority vote of its K-nearest neighbours. k=1 special case. Even amount of classes needs an odd K that is not a multiple of the amount of classes in order to break ties.** 
+2. [**KNN**](https://www.youtube.com/watch?v=4ObVzTuFivY) **\*\*\[**intuition 2**\]\(**[https://www.youtube.com/watch?v=UqYde-LULfs](https://www.youtube.com/watch?v=UqYde-LULfs)**\)**, **\[**thorough explanation 3**\]\(**[https://towardsdatascience.com/introduction-to-k-nearest-neighbors-3b534bb11d26](https://towardsdatascience.com/introduction-to-k-nearest-neighbors-3b534bb11d26)**\)**  - classify a new sample by looking at the majority vote of its K-nearest neighbours. k=1 special case. Even amount of classes needs an odd K that is not a multiple of the amount of classes in order to break ties.\*\* 
 3. [**Determinging the number of clusters, a comparison of several methods, elbow, silhouette etc**](https://www.datanovia.com/en/lessons/determining-the-optimal-number-of-clusters-3-must-know-methods/)
 4. [**A good visual example of kmeans / gmm**](https://medium.com/sfu-cspmp/distilling-gaussian-mixture-models-701fa9546d9)
 5. [**Kmeans with DTW, probably fixed length vectors, using tslearn**](https://towardsdatascience.com/how-to-apply-k-means-clustering-to-time-series-data-28d04a8f7da3)
@@ -11,9 +11,7 @@
 
 1. [**pyClustering** ](https://pyclustering.github.io/docs/0.10.1/html/index.html)![](https://lh5.googleusercontent.com/Wyc8biCZCBvmybSOytsjJYmdhQUVq5F5Kl4tj6luvww9uXVywkBWzCHlsnUaz07KTyIRi98_vIembQVnhWWRv6DYK_DhUKC9NNg8mRJPk0cg0Ov4EV66pg7dZW4K7HPEq-xy6axz)
 
-### 
-
-### **Block Modeling - Distance Matrices**
+## **Block Modeling - Distance Matrices**
 
 1. [**Biclustering and spectral co clustering**](https://scikit-learn.org/stable/modules/biclustering.html)
 2. [**Clustering correlation, or distance matrices.**](https://stats.stackexchange.com/questions/138325/clustering-a-correlation-matrix)
@@ -21,14 +19,12 @@
 ![](https://lh6.googleusercontent.com/SdPIjYLt8PksdDmmQDPUn24U1DyNOGyZfsV3V8OxqdU62NzahrACouK7eD5hUkjL_brbtfRq4uvEUk6FiHR_vLzr2hbnT774XElKXsZmK3RGnuLGyzFXtxTJyNmnsnrbfxj7Bvv3)
 
 1. **Any of the “precomputed” algorithms in sklearn, just remember to** [**do 1-distanceMatrix**](https://github.com/scikit-learn/scikit-learn/issues/6787)**. I.e., using dbscan/hdbscan/optics, you need a dissimilarity matrix.**
-2. 
-### [**Kmeans**](https://github.com/jakevdp/sklearn_pycon2015/blob/master/notebooks/04.2-Clustering-KMeans.ipynb)
+2. \*\*\*\*[**Kmeans**](https://github.com/jakevdp/sklearn_pycon2015/blob/master/notebooks/04.2-Clustering-KMeans.ipynb)\*\*\*\*
+3. **Sensitive to outliers, can skew results \(because we rely on the mean\)**
 
-1. **Sensitive to outliers, can skew results \(because we rely on the mean\)**
+## [**K-mediods**](https://en.wikipedia.org/wiki/K-medoids)
 
-### [**K-mediods**](https://en.wikipedia.org/wiki/K-medoids)
-
- **- basically k-means with a most center object rather than a center virtual point that was based on mean distance from all points, we keep choosing medoids samples based on minimised SSE**
+**- basically k-means with a most center object rather than a center virtual point that was based on mean distance from all points, we keep choosing medoids samples based on minimised SSE**
 
 * **k-medoid is a classical partitioning technique of clustering that clusters the data set of n objects into k clusters known a priori.**
 * **It is more robust to noise and outliers as compared to** [**k-means**](https://en.wikipedia.org/wiki/K-means) **because it minimizes a sum of pairwise dissimilarities instead of a sum of squared Euclidean distances.**
@@ -36,31 +32,28 @@
 * **Does Not scale to many samples, its O\(K\*n-K\)^2**
 * **Randomized resampling can assure efficiency and quality.**
 
-[**From youtube \(okay video\)**](https://www.youtube.com/watch?v=OWpRBCrx5-M)  
-****
+[**From youtube \(okay video\)**](https://www.youtube.com/watch?v=OWpRBCrx5-M)
 
 ![](https://lh4.googleusercontent.com/rUA_KIAXZ3nSbbFGo0YsQCF7M5JpTm8Sr2jsdfeIuc2RWeF4OqjRTOE0wVGl7tRkJeiIwnPQJyGS-mKI-PFr_BUR5e8oWQhw1EGnamVbpmXm0rme2Clfn9Bf--6ZZbgNbsslkOIk)
 
-### **X-means**![](https://lh6.googleusercontent.com/aSlcmQ3DlWOozVCc4583cI-f-wplzHhygD-ecO7r-J9AtqZQhyWSZkvcClpmuHZdvHUp3MZUCNthXaNG-FB8LqmKhwMmZxiPOO665C4Q_bp9mB6sIhwbxFw2NwrkaOThSruvIc1Q)
+## **X-means**![](https://lh6.googleusercontent.com/aSlcmQ3DlWOozVCc4583cI-f-wplzHhygD-ecO7r-J9AtqZQhyWSZkvcClpmuHZdvHUp3MZUCNthXaNG-FB8LqmKhwMmZxiPOO665C4Q_bp9mB6sIhwbxFw2NwrkaOThSruvIc1Q)
 
-**X-means\(**[**paper**](https://www.cs.cmu.edu/~dpelleg/download/xmeans.pdf)**\):**   
-
+**X-means\(**[**paper**](https://www.cs.cmu.edu/~dpelleg/download/xmeans.pdf)**\):**
 
 1. [**Theory**](https://stats.stackexchange.com/questions/13103/x-mean-algorithm-bic-calculation-question) **behind bic calculation with a formula.**
 2. **Code:** [**Calculate bic in k-means**](https://stats.stackexchange.com/questions/90769/using-bic-to-estimate-the-number-of-k-in-kmeans?rq=1)
 
 ![](https://lh4.googleusercontent.com/ZOcoLxyDBb42-vW0xKR-8ZjEkmUXh-zFunErX1oKHsS4ZLeaEE-momDpCW7OwVH_npu66xmojiqd3CwbvQWJkluwutnqBkEDSMluluap5T09YGlUmfWoYQ43XG1U26BHR4wf9Qa9)
 
-### **G-means**
+## **G-means**
 
 **G-means** [**Improves on X-means**](https://papers.nips.cc/paper/2526-learning-the-k-in-k-means.pdf) **in the paper: The G-means algorithm starts with a small number of k-means centers, and grows the number of centers. Each iteration of the algorithm splits into two those centers whose data appear not to come from a Gaussian distribution using the Anderson Darling test. Between each round of splitting, we run k-means on the entire dataset and all the centers to refine the current solution. We can initialize with just k = 1, or we can choose some larger value of k if we have some prior knowledge about the range of k. G-means repeatedly makes decisions based on a statistical test for the data assigned to each enter. If the data currently assigned to a k-means center appear to be Gaussian, then we want to represent that data with only one center.**
 
 ![](https://lh3.googleusercontent.com/tW_fWHRABqO3bsqiSobm5FUlkW5sHnoWAFDJZSIGAiiSkYHtBZvUeTmFrR02xPRUQm-rvvoOoeBRh5nmyoz7SyZ4eKj9REFgpGt2lf-SACUCcckg4KiNcTV8Kd2pjtIkfzavzbVU)
 
-### **GMM - Gaussian Mixture Models**
+## **GMM - Gaussian Mixture Models**
 
-**?-** [**What is GMM**](https://datascience.stackexchange.com/questions/14435/how-to-get-the-probability-of-belonging-to-clusters-for-k-means) **in short its knn with mean/variance centroids, a sample can be in several centroids with a certain probability.**  
-
+**?-** [**What is GMM**](https://datascience.stackexchange.com/questions/14435/how-to-get-the-probability-of-belonging-to-clusters-for-k-means) **in short its knn with mean/variance centroids, a sample can be in several centroids with a certain probability.**
 
 **Let us briefly talk about a probabilistic generalisation of k-means: the** [**Gaussian Mixture Model**](https://en.wikipedia.org/wiki/Mixture_model)**\(GMM\).**
 
@@ -88,14 +81,13 @@
 
 **- iterate until convergence**
 
-**You may notice the similarity between these two procedures. In fact, k-means is a GMM with fixed-variance components. Under a GMM, the probabilities \(I think\) you're looking for are the responsibilities each component takes for each data point.**  
-
+**You may notice the similarity between these two procedures. In fact, k-means is a GMM with fixed-variance components. Under a GMM, the probabilities \(I think\) you're looking for are the responsibilities each component takes for each data point.**
 
 1. [**Gmm code on sklearn**](https://scikit-learn.org/stable/auto_examples/mixture/plot_gmm.html#sphx-glr-auto-examples-mixture-plot-gmm-py) **using ellipsoids**
 2. [**How to select the K  using bic**](https://scikit-learn.org/stable/auto_examples/mixture/plot_gmm_selection.html#sphx-glr-auto-examples-mixture-plot-gmm-selection-py)
 3. [**Density estimation for gmm - nice graph**](https://scikit-learn.org/stable/auto_examples/mixture/plot_gmm_pdf.html#sphx-glr-auto-examples-mixture-plot-gmm-pdf-py)
 
-### **KMEANS++ / Kernel Kmeans**
+## **KMEANS++ / Kernel Kmeans**
 
 1. [**A comparison of kmeans++ vs kernel kmeans**](https://sandipanweb.wordpress.com/2016/08/29/kernel-k-means-and-cluster-evaluation/)
 2. [**Kernel Kmeans is part of TSLearn** ](http://tslearn.readthedocs.io/en/latest/gen_modules/clustering/tslearn.clustering.GlobalAlignmentKernelKMeans.html)
@@ -104,11 +96,11 @@
 5. [**elbow on medium using mean distance per cluster from the center**](https://towardsdatascience.com/what-is-k-ddf36926a752)
 6. [**Kneed a library to find the knee in a curve**](https://github.com/arvkevi/kneed)
 
-### **KNN**
+## **KNN**
 
 1. [**Nearpy**](https://github.com/pixelogik/NearPy)**, knn in scale! On github**
 
-### **DBSCAN**
+## **DBSCAN**
 
 1. [**How to use effectively**](https://towardsdatascience.com/how-to-use-dbscan-effectively-ed212c02e62)
 2. [**a DBSCAN visualization - very good!**](https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
@@ -122,13 +114,13 @@
    3. [**Fast dbscan**](https://github.com/harmslab/fast_dbscan) **- A lightweight, fast dbscan implementation for use on peptide strings. It uses pure C for the distance calculations and clustering. This code is then wrapped in python.**
    4. [**Faster dbscan paper**](https://arxiv.org/pdf/1702.08607.pdf)
 
-### **ST-DBSCAN**
+## **ST-DBSCAN**
 
 1. [**Paper - st-dbscan an algo for clustering spatio temporal data**](https://www.sciencedirect.com/science/article/pii/S0169023X06000218)
 2. [**Popular git**](https://github.com/eubr-bigsea/py-st-dbscan)
 3. [**git**](https://github.com/gitAtila/ST-DBSCAN)
 
-### **HDBSCAN\***
+## **HDBSCAN\***
 
 **\(what is?\) HDBSCAN is a clustering algorithm developed by** [**Campello, Moulavi, and Sander**](http://link.springer.com/chapter/10.1007%2F978-3-642-37456-2_14)**. It extends DBSCAN by converting it into a hierarchical clustering algorithm, and then using a technique to extract a flat clustering based in the stability of clusters.**
 
@@ -144,20 +136,20 @@
 4. **Condense the cluster hierarchy based on minimum cluster size.**
 5. **Extract the stable clusters from the condensed tree.**
 
-### **OPTICS**
+## **OPTICS**
 
-**\(**[**What is?**](https://en.wikipedia.org/wiki/OPTICS_algorithm)**\) Ordering points to identify the clustering structure \(OPTICS\) is an algorithm for finding density-based**[**\[1\]**](https://en.wikipedia.org/wiki/OPTICS_algorithm#cite_note-1) ****[**clusters**](https://en.wikipedia.org/wiki/Cluster_analysis) **in spatial data**
+**\(**[**What is?**](https://en.wikipedia.org/wiki/OPTICS_algorithm)**\) Ordering points to identify the clustering structure \(OPTICS\) is an algorithm for finding density-based**[**\[1\]**](https://en.wikipedia.org/wiki/OPTICS_algorithm#cite_note-1) **\*\*\[**clusters**\]\(**[https://en.wikipedia.org/wiki/Cluster\_analysis](https://en.wikipedia.org/wiki/Cluster_analysis)**\)** in spatial data\*\*
 
-* **Its basic idea is similar to** [**DBSCAN**](https://en.wikipedia.org/wiki/DBSCAN)**,**[**\[3\]**](https://en.wikipedia.org/wiki/OPTICS_algorithm#cite_note-3) ****
+* **Its basic idea is similar to** [**DBSCAN**](https://en.wikipedia.org/wiki/DBSCAN)**,**[**\[3\]**](https://en.wikipedia.org/wiki/OPTICS_algorithm#cite_note-3) _\*\*_
 * **it addresses one of DBSCAN's major weaknesses: the problem of detecting meaningful clusters in data of varying density.** 
 * **\(How?\) the points of the database are \(linearly\) ordered such that points which are spatially closest become neighbors in the ordering.** 
 * **a special distance is stored for each point that represents the density that needs to be accepted for a cluster in order to have both points belong to the same cluster. \(This is represented as a** [**dendrogram**](https://en.wikipedia.org/wiki/Dendrogram)**.\)**
 
-### **SVM CLUSTERING**
+## **SVM CLUSTERING**
 
 [**Paper**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2099486/#:~:text=An%20SVM%2Dbased%20clustering%20algorithm,until%20an%20initial%20convergence%20occurs.)
 
-**An SVM-based clustering algorithm is introduced that clusters data with no a priori knowledge of input classes.** 
+**An SVM-based clustering algorithm is introduced that clusters data with no a priori knowledge of input classes.**
 
 1. **The algorithm initializes by first running a binary SVM classifier against a data set with each vector in the set randomly labelled, this is repeated until an initial convergence occurs.** 
 2. **Once this initialization step is complete, the SVM confidence parameters for classification on each of the training instances can be accessed.** 
@@ -166,14 +158,11 @@
 5. **This approach appears to limit exposure to the local minima traps that can occur with other approaches. Thus, the algorithm then improves on its weakly convergent result by SVM re-training after each re-labeling on the worst of the misclassified vectors – i.e., those feature vectors with confidence factor values beyond some threshold.** 
 6. **The repetition of the above process improves the accuracy, here a measure of separability, until there are no misclassifications. Variations on this type of clustering approach are shown.**
 
-### **COP-CLUSTERING**
+## **COP-CLUSTERING**
 
-**Constrained K-means algorithm,** [**git**](https://github.com/Behrouz-Babaki/COP-Kmeans)**,** [**paper**](https://web.cse.msu.edu/~cse802/notes/ConstrainedKmeans.pdf)**, is a semi-supervised algorithm.**  
+**Constrained K-means algorithm,** [**git**](https://github.com/Behrouz-Babaki/COP-Kmeans)**,** [**paper**](https://web.cse.msu.edu/~cse802/notes/ConstrainedKmeans.pdf)**, is a semi-supervised algorithm.**
 
-
-**Clustering is traditionally viewed as an unsupervised method for data analysis. However, in some cases information about the problem domain is available in addition to the data instances themselves. In this paper, we demonstrate how the popular k-means clustering algorithm can be profitably modified to make use of this information. In experiments with artificial constraints on six data sets, we observe improvements in clustering accuracy. We also apply this method to the real-world problem of automatically detecting road lanes from GPS data and observe dramatic increases in performance.**  
-  
-
+**Clustering is traditionally viewed as an unsupervised method for data analysis. However, in some cases information about the problem domain is available in addition to the data instances themselves. In this paper, we demonstrate how the popular k-means clustering algorithm can be profitably modified to make use of this information. In experiments with artificial constraints on six data sets, we observe improvements in clustering accuracy. We also apply this method to the real-world problem of automatically detecting road lanes from GPS data and observe dramatic increases in performance.**
 
 **In the context of partitioning algorithms, instance level constraints are a useful way to express a priori knowledge about which instances should or should not be grouped together. Consequently, we consider two types of pairwise constraints:  
 • Must-link constraints specify that two instances have to be in the same cluster.  

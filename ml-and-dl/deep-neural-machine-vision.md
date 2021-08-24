@@ -1,14 +1,14 @@
 # Deep Neural Machine Vision
 
-### **TOOLS**
+## **TOOLS**
 
 1. [**Image deduplication**](https://github.com/idealo/imagededup)
 
-### **SUPER RESOLUTION**
+## **SUPER RESOLUTION**
 
 1. [**State of the art comparison**](http://www.wisdom.weizmann.ac.il/~vision/zssr/)
 
-### **DETECTION**
+## **DETECTION**
 
 ![](https://lh5.googleusercontent.com/Efe-9nD1W6Hes040DI2Zgm2lzh0vnkYVTB95hnK1rmv3DYtfbPt9Bia0iVnSV49xJRs8JYLggj7KvIRGZDpbz4melmLvp0uLwQ-F6wtCjHYwRKjD4rw7DH8p90Gqo-P4DZNpW8fH)
 
@@ -40,8 +40,6 @@
 26. [**Object Detection for Dummies Part 3: R-CNN Family**](https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html)**, 2017.**
 27. [**Object Detection Part 4: Fast Detection Models**](https://lilianweng.github.io/lil-log/2018/12/27/object-detection-part-4.html)**, 2018.**
 28. [**Ikea ASM**](https://ikeaasm.github.io/)
-29. 
-### **RECOGNITION**
-
-1. [**Using image hashtags**](https://engineering.fb.com/ml-applications/advancing-state-of-the-art-image-recognition-with-deep-learning-on-hashtags/)
+29. **RECOGNITION**
+30. [**Using image hashtags**](https://engineering.fb.com/ml-applications/advancing-state-of-the-art-image-recognition-with-deep-learning-on-hashtags/)
 

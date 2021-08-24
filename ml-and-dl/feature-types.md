@@ -2,7 +2,7 @@
 
 \*\*\*\*[**Feature Types**](http://www.biostat.umn.edu/~will/6470stuff/Class09-12/Handout09.pdf) **- no permission doc**
 
-**Discrete** 
+**Discrete**
 
 * **Numbers** 
 * **Categorical**
@@ -13,13 +13,11 @@
 * **Categorical variables are often called** [**nominal**](https://en.wikipedia.org/wiki/Nominal_category)**.**
 * **labels, usually discrete values such as gender, country of origin, marital status, high-school graduate**
 
-**Continuous \(the opposite of discrete\): real-number values, measured on a continuous scale: height, weight.**   
+**Continuous \(the opposite of discrete\): real-number values, measured on a continuous scale: height, weight.**
 
+**In order to compute a regression, categorical predictors must be re-expressed as numeric: some form of indicator variables \(0/1\) with a separate indicator for each level of the factor.**
 
-**In order to compute a regression, categorical predictors must be re-expressed as numeric: some form of indicator variables \(0/1\) with a separate indicator for each level of the factor.** 
+**Discrete with many values are often treated as continuous, i.e. zone numbers - &gt; binary**
 
-**Discrete with many values are often treated as continuous, i.e. zone numbers - &gt; binary**  
-
-
-[**Variable types:**](http://www.socialresearchmethods.net/kb/measlevl.php) **Nominal\(weather\), ordinal\(order var 1,2,3\), interval\(range\),** 
+[**Variable types:**](http://www.socialresearchmethods.net/kb/measlevl.php) **Nominal\(weather\), ordinal\(order var 1,2,3\), interval\(range\),**
 

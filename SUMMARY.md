@@ -4,11 +4,9 @@
 
 ## ML & DL
 
-* [Types Of Machine Learning](ml-and-dl/untitled-1.md)
 * [Types Of Machine Learning](ml-and-dl/types-of-machine-learning.md)
 * [Data Science](ml-and-dl/data-science.md)
 * [Data Science Tools](ml-and-dl/data-science-tools.md)
-* [Management](ml-and-dl/management.md)
 * [Data Science Management](ml-and-dl/data-science-management.md)
 * [Calculus](ml-and-dl/calculus.md)
 * [Probability & Statistics](ml-and-dl/probability-and-statistics.md)
@@ -60,3 +58,4 @@
 * [Deep Neural Machine Vision](ml-and-dl/deep-neural-machine-vision.md)
 * [Deep Neural Audio](ml-and-dl/deep-neural-audio.md)
 * [Root Cause Effects \(ml-and-dl/RCE/RCA\)](ml-and-dl/root-cause-effects-rce-rca.md)
+

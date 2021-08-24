@@ -61,24 +61,23 @@
 8. [**Blending vs stacking**](https://www.quora.com/What-are-examples-of-blending-and-stacking-in-Machine-Learning)
 9. [**Kaggle ensemble guide**](https://mlwave.com/kaggle-ensembling-guide/)
 
-### [**Ensembles in WEKA**](http://machinelearningmastery.com/use-ensemble-machine-learning-algorithms-weka/) ****
+## [**Ensembles in WEKA**](http://machinelearningmastery.com/use-ensemble-machine-learning-algorithms-weka/) _\*\*_
 
 **- bagging \(random sample selection, multi classifier training\), random forest \(random feature selection for each tree, multi tree training\), boosting\(creating stumps, each new stump tries to fix the previous error, at last combining results using new data, each model is assigned a skill weight and accounted for in the end\), voting\(majority vote, any set of algorithms within weka, results combined via mean or some other way\), stacking\(same as voting but combining predictions using a meta model is used\).**
 
-### **BAGGING - bootstrap aggregating**
+## **BAGGING - bootstrap aggregating**
 
 [**Bagging**](https://www.youtube.com/watch?v=2Mg8QD0F1dQ&list=PLAwxTw4SYaPnIRwl6rad_mYwEk4Gmj7Mx&index=192) **- best example so far, create m bags, put n’&lt;n samples \(60% of n\) in each bag - with replacement which means that the same sample can be selected twice or more, query from the test \(x\) each of the m models, calculate mean, this is the classification.**
 
 ![](https://lh5.googleusercontent.com/U0_wGc2DQhx1TYC_ntWSyW9J0XtJJwP4bZ8ONOLgbqb4LM0K7c6-As1HX9wT0LGRON6sOvl3l-WeEOOmuTCupNN3q8Q_kQU8Y1nhhBi6-Of2bcajJfVjhqRRcY-qudAm_u3jXOuF)
 
-**Overfitting -  not an issue with bagging, as the mean of the models actually averages or smoothes the “curves”. Even if all of them are overfitted.**
+**Overfitting - not an issue with bagging, as the mean of the models actually averages or smoothes the “curves”. Even if all of them are overfitted.**
 
 ![](https://lh4.googleusercontent.com/KOj9utriFKEjOxhw8hFE2iX8gq5ljjBHruuhH1Q-deWVPYrEA2RHWaAhKfs-Q1XivON_F7KA3vXL4Mo-GqI4OZTgi0WhC9iNdo4IoOSxQ8gUyoa_F56TOFiXf-hgMsdIFGWLoq6k)
 
-### **BOOSTING**
+## **BOOSTING**
 
-**Mastery on using** [**all the boosting algorithms**](https://machinelearningmastery.com/gradient-boosting-with-scikit-learn-xgboost-lightgbm-and-catboost/?fbclid=IwAR1wenJZ52kU5RZUgxHE4fj4M9Ods1p10EBh5J4QdLSSq2XQmC4s9Se98Sg)**: Gradient Boosting with Scikit-Learn, XGBoost, LightGBM, and CatBoost**  
-
+**Mastery on using** [**all the boosting algorithms**](https://machinelearningmastery.com/gradient-boosting-with-scikit-learn-xgboost-lightgbm-and-catboost/?fbclid=IwAR1wenJZ52kU5RZUgxHE4fj4M9Ods1p10EBh5J4QdLSSq2XQmC4s9Se98Sg)**: Gradient Boosting with Scikit-Learn, XGBoost, LightGBM, and CatBoost**
 
 **Adaboost: similar to bagging, create a system that chooses from samples that were modelled poorly before.**
 
@@ -89,7 +88,7 @@
 
 ![](https://lh5.googleusercontent.com/iwKa08rChrddn1TM9GoSwmc3gGfxhUbOnPpwHoBS8YHEwUPUOkHifHAO88DR2uiDgRg1VL-dgmnQ2NWFFPJ4CTWvoYdFtBCW-feiBX8SdZ1waY0VkGYclr_m48OzHazmHWrNV3G-)
 
-### **XGBOOST**
+## **XGBOOST**
 
 * [**What is XGBOOST?**](http://homes.cs.washington.edu/~tqchen/2016/03/10/story-and-lessons-behind-the-evolution-of-xgboost.html) **XGBoost is an optimized distributed gradient boosting system designed to be highly efficient, flexible and portable** [**\#2nd link**](http://dmlc.cs.washington.edu/xgboost.html)
 * [**Does it cause overfitting?**](https://stats.stackexchange.com/questions/20714/does-ensembling-boosting-cause-overfitting)
@@ -112,26 +111,24 @@
 
 * [**https://cran.r-project.org/web/packages/xgboost/xgboost.pdf**](https://cran.r-project.org/web/packages/xgboost/xgboost.pdf)
 * **Here is an example configuration for multi-class classification:** 
-*  **weka.classifiers.mlr.MLRClassifier -learner “nrounds = 10, max\_depth = 2, eta = 0.5, nthread = 2”**
+* **weka.classifiers.mlr.MLRClassifier -learner “nrounds = 10, max\_depth = 2, eta = 0.5, nthread = 2”**
 * **classif.xgboost -params "nrounds = 1000, max\_depth = 4, eta = 0.05, nthread = 5, objective = \"multi:softprob\"**
 
-**Copy: nrounds = 10, max\_depth = 2, eta = 0.5, nthread = 2**  
+**Copy: nrounds = 10, max\_depth = 2, eta = 0.5, nthread = 2**
 
+[**Special case of random forest using XGBOOST**](https://github.com/dmlc/xgboost/blob/master/R-package/vignettes/discoverYourData.Rmd#special-note-what-about-random-forests)**:**
 
-[**Special case of random forest using XGBOOST**](https://github.com/dmlc/xgboost/blob/master/R-package/vignettes/discoverYourData.Rmd#special-note-what-about-random-forests)**:**  
+\*\*\#Random Forest™ - 1000 trees  
+bst &lt;- xgboost\(data = train$data, label = train$label, max\_depth = 4, num\_parallel\_tree = 1000, subsample = 0.5, colsample\_bytree =0.5, nrounds = 1, objective = "binary:logistic"\)
 
-
-**\#Random Forest™ - 1000 trees  
-bst &lt;- xgboost\(data = train$data, label = train$label, max\_depth = 4, num\_parallel\_tree = 1000, subsample = 0.5, colsample\_bytree =0.5, nrounds = 1, objective = "binary:logistic"\)  
-  
 \#Boosting - 3 rounds  
-bst &lt;- xgboost\(data = train$data, label = train$label, max\_depth = 4, nrounds = 3, objective = "binary:logistic"\)**
+bst &lt;- xgboost\(data = train$data, label = train$label, max\_depth = 4, nrounds = 3, objective = "binary:logistic"\)\*\*
 
 **RF1000: - max\_depth = 4, num\_parallel\_tree = 1000, subsample = 0.5, colsample\_bytree =0.5, nrounds = 1, nthread = 2**
 
 **XG: nrounds = 10, max\_depth = 4, eta = 0.5, nthread = 2**
 
-### **Gradient Boosting Classifier**
+## **Gradient Boosting Classifier**
 
 1. [**Loss functions and GBC vs XGB**](https://stats.stackexchange.com/questions/202858/loss-function-approximation-with-taylor-expansion)
 2. [**Why is XGB faster than SK GBC** ](https://datascience.stackexchange.com/questions/10943/why-is-xgboost-so-much-faster-than-sklearn-gradientboostingclassifier)

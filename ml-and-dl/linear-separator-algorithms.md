@@ -1,15 +1,14 @@
 # Linear Separator Algorithms
 
-### **SEQUENTIAL MINIMAL OPTIMIZATION \(SMO\)**
+## **SEQUENTIAL MINIMAL OPTIMIZATION \(SMO\)**
 
 [**What is the SMO \(SVM\) classifier?**](https://www.microsoft.com/en-us/research/publication/sequential-minimal-optimization-a-fast-algorithm-for-training-support-vector-machines/?from=http%3A%2F%2Fresearch.microsoft.com%2Fpubs%2F69644%2Ftr-98-14.pdf) **- Sequential Minimal Optimization, or SMO. Training a support vector machine requires the solution of a very large quadratic programming \(QP\) optimization problem. SMO breaks this large QP problem into a series of the smallest possible QP problems. These small QP problems are solved analytically, which avoids using a time-consuming numerical QP optimization as an inner loop. The amount of memory required for SMO is linear in the training set size, which allows SMO to handle very large training sets. Because matrix computation is avoided, SMO scales somewhere between linear and quadratic in the training set size for various test problems, while the standard chunking SVM algorithm scales somewhere between linear and cubic in the training set size. SMO’s computation time is dominated by SVM evaluation, hence SMO is fastest for linear SVMs and sparse data sets. On real-world sparse data sets, SMO can be more than 1000 times faster than the chunking algorithm.**
 
-[**Differences between libsvm and liblinear**](https://stackoverflow.com/questions/11508788/whats-the-difference-between-libsvm-and-liblinear) **&** [**smo vs libsvm**](https://stackoverflow.com/questions/23674411/weka-smo-vs-libsvm)  
-****
+[**Differences between libsvm and liblinear**](https://stackoverflow.com/questions/11508788/whats-the-difference-between-libsvm-and-liblinear) **&** [**smo vs libsvm**](https://stackoverflow.com/questions/23674411/weka-smo-vs-libsvm)
 
-### **SUPPORT VECTOR MACHINES \(SVM\)**
+## **SUPPORT VECTOR MACHINES \(SVM\)**
 
-**-** [**Definition**](http://docs.opencv.org/3.0-beta/modules/ml/doc/support_vector_machines.html)**,** [**tutorial**](https://jakevdp.github.io/PythonDataScienceHandbook/05.07-support-vector-machines.html)**\*\*\*:** 
+**-** [**Definition**](http://docs.opencv.org/3.0-beta/modules/ml/doc/support_vector_machines.html)**,** [**tutorial**](https://jakevdp.github.io/PythonDataScienceHandbook/05.07-support-vector-machines.html)**\*\*\*:**
 
 * **For Optimal 2-class classifier.** 
 * **Extended for regression and clustering problems \(1 class\).** 
@@ -22,13 +21,11 @@
 * **The feature vectors that are the closest to the hyper-plane are called support vectors, which means that the position of other vectors does not affect the hyper-plane \(the decision function\).** 
 * **The model produced by support vector classification \(as described above\) depends only on a subset of the training data, because the cost function for building the model does not care about training points that lie beyond the margin.** 
 
-### [**MULTI CLASS SVM**](https://www.csie.ntu.edu.tw/~cjlin/papers/multisvm.pdf)
+## [**MULTI CLASS SVM**](https://www.csie.ntu.edu.tw/~cjlin/papers/multisvm.pdf)
 
-[ ****](https://www.csie.ntu.edu.tw/~cjlin/papers/multisvm.pdf)**- one against all, one against one, and Direct Acyclic Graph SVM \(one against one with DAG\). bottom line One Against One in LIBSVM.**  
+[ _\*\*_](https://www.csie.ntu.edu.tw/~cjlin/papers/multisvm.pdf)**- one against all, one against one, and Direct Acyclic Graph SVM \(one against one with DAG\). bottom line One Against One in LIBSVM.**
 
-
-[**A few good explanation about SVM, formulas, figures, C, gamma, etc.**](https://www.quora.com/What-are-C-and-gamma-with-regards-to-a-support-vector-machine)  
-****
+[**A few good explanation about SVM, formulas, figures, C, gamma, etc.**](https://www.quora.com/What-are-C-and-gamma-with-regards-to-a-support-vector-machine)
 
 **Math of SVM on youtube:**
 
@@ -48,27 +45,27 @@
 * **Mercer condition - it acts like a distance\similar so that is the “rule” of which a kernel needs to follow.**
 * [**Super good lecture on MIT OPEN COURSE WARE**](https://www.youtube.com/watch?v=_PwhiWxHK8o) **- expands on the quadratic equations that were introduced in the previous course above.**
 
-### **Regularization and influence** 
+## **Regularization and influence**
 
 **- \(basically punishment for overfitting and raising the non- linear class points higher and lower\)**
 
 * [**How does regularization look like in SVM**](https://datascience.stackexchange.com/questions/4943/intuition-for-the-regularization-parameter-in-svm) **- controlling ‘C’**
 * [**The best explanation about Gamma \(and C\) in  SVM!**](https://www.quora.com/What-are-C-and-gamma-with-regards-to-a-support-vector-machine)
 
-### **SUPPORT VECTOR REGRESSION \(SVR\)**
+## **SUPPORT VECTOR REGRESSION \(SVR\)**
 
- **-** [**Definition Support Vector Regression**](http://scikit-learn.org/stable/modules/svm.html#svm-implementation-details)**.:**
+**-** [**Definition Support Vector Regression**](http://scikit-learn.org/stable/modules/svm.html#svm-implementation-details)**.:**
 
 * **The method of SVM can be extended to solve regression problems.** 
 * **Similar to SVM, the model produced by Support Vector Regression depends only on a subset of the training data, because the cost function for building the model ignores any training data close to the model prediction.**
 
-### [**LibSVM vs LibLinear**](https://stackoverflow.com/questions/11508788/whats-the-difference-between-libsvm-and-liblinear) ****
+## [**LibSVM vs LibLinear**](https://stackoverflow.com/questions/11508788/whats-the-difference-between-libsvm-and-liblinear) _\*\*_
 
 **- using many kernel transforms to turn a non-linear problem into a linear problem beforehand.**
 
-**From the link above, it seems like liblinear is very much the same thing, without those kernel transforms. So, as they say, in cases where the kernel transforms are not needed \(they mention document classification\), it will be faster.** 
+**From the link above, it seems like liblinear is very much the same thing, without those kernel transforms. So, as they say, in cases where the kernel transforms are not needed \(they mention document classification\), it will be faster.**
 
-*  **libsvm \(SMO\) implementation** 
+* **libsvm \(SMO\) implementation** 
   * **kernel \(n^2\)** 
   * **Linear SVM \(n^3\)** 
 * **liblinear - optimized to deal with linear classification without kernels**
@@ -78,15 +75,13 @@
 
 **n is the number of samples in the training dataset.**
 
-**Conclusion: In practice libsvm becomes painfully slow at 10k samples. Hence for medium to large scale datasets use liblinear and forget about libsvm \(or maybe have a look at approximate kernel SVM solvers such as** [**LaSVM**](http://leon.bottou.org/projects/lasvm)**, which saves training time and memory usage for large scale datasets\).**  
+**Conclusion: In practice libsvm becomes painfully slow at 10k samples. Hence for medium to large scale datasets use liblinear and forget about libsvm \(or maybe have a look at approximate kernel SVM solvers such as** [**LaSVM**](http://leon.bottou.org/projects/lasvm)**, which saves training time and memory usage for large scale datasets\).**
 
+## **Support vector clustering \(SVC\)**
 
-### **Support vector clustering \(SVC\)**
+[**paper**](http://www.jmlr.org/papers/volume2/horn01a/horn01a.pdf)**,** [**short explanation**](https://www.quora.com/Is-it-possible-to-use-SVMs-for-unsupervised-learning-density-estimation)
 
-[**paper**](http://www.jmlr.org/papers/volume2/horn01a/horn01a.pdf)**,** [**short explanation**](https://www.quora.com/Is-it-possible-to-use-SVMs-for-unsupervised-learning-density-estimation)  
-****
-
-### **KERNELS**
+## **KERNELS**
 
 [**What are kernels in SVM**](https://www.quora.com/What-are-Kernels-in-Machine-Learning-and-SVM) **- intuition and example**
 
@@ -102,22 +97,19 @@
 
 **Let's plug in some numbers to make this more intuitive: suppose x = \(1, 2, 3\); y = \(4, 5, 6\). Then:**
 
-**f\(x\) = \(1, 2, 3, 2, 4, 6, 3, 6, 9\)  and f\(y\) = \(16, 20, 24, 20, 25, 30, 24, 30, 36\)**
+**f\(x\) = \(1, 2, 3, 2, 4, 6, 3, 6, 9\) and f\(y\) = \(16, 20, 24, 20, 25, 30, 24, 30, 36\)**
 
 **&lt;f\(x\), f\(y\)&gt; = 16 + 40 + 72 + 40 + 100+ 180 + 72 + 180 + 324 = 1024 i.e., 1\*16+2\*20+\*3\*24..**
 
-**A lot of algebra. Mainly because f is a mapping from 3-dimensional to 9 dimensional space.**  
-
+**A lot of algebra. Mainly because f is a mapping from 3-dimensional to 9 dimensional space.**
 
 **With a kernel its faster.**
 
-**K\(x, y\) = \(4 + 10 + 18 \) ^2 = 32^2 = 1024**  
+**K\(x, y\) = \(4 + 10 + 18 \) ^2 = 32^2 = 1024**
 
+**A kernel is a magical shortcut to calculate even infinite dimensions!**
 
-**A kernel is a magical shortcut to calculate even infinite dimensions!**  
-
-
-[**Relation to SVM**](https://www.quora.com/What-are-Kernels-in-Machine-Learning-and-SVM)**?:** 
+[**Relation to SVM**](https://www.quora.com/What-are-Kernels-in-Machine-Learning-and-SVM)**?:**
 
 * **The idea of SVM is that y = w phi\(x\) +b, where w is the weight, phi is the feature vector, and b is the bias.** 
 * **if y&gt; 0, then we classify datum to class 1, else to class 0.** 
@@ -131,7 +123,7 @@
 * **SVM::LINEAR Linear kernel. No mapping is done, linear discrimination \(or regression\) is done in the original feature space. It is the fastest option.** ![K\(x\_i, x\_j\) = x\_i^T x\_j](https://lh4.googleusercontent.com/Mfq20YIBuEej-4AiuZE6nzv-43XGOFJ2VWAHucAHsElzCj3Eh_wUK_zWgHUfEsnSyTzUg8RtwQt6rYLfgdIPjJns_416pSxChdp4uXpZk9g5KTRgx68cOKAg0lUe454zrZRyz9Ba)**.**
 * **SVM::RBF Radial basis function \(RBF\), a good choice in most cases.** ![K\(x\_i, x\_j\) = e^{-\gamma \|\|x\_i - x\_j\|\|^2}, \gamma &amp;gt; 0](https://lh4.googleusercontent.com/W2-dQgvlYzZXmeKNBSAxsVF-xGfqLehGkxLF33h-imnt0XTkeYChun4nettiIz1vfY7p_bvlMS9Ys7dkENagWMnO2u4-oKr1G5OYcU9qa_VnCoGZpl7KackXZjvz4wB2XGGAeAiI)**.**
 
-### [**Intuition for regularization in SVM**](https://datascience.stackexchange.com/questions/4943/intuition-for-the-regularization-parameter-in-svm)
+## [**Intuition for regularization in SVM**](https://datascience.stackexchange.com/questions/4943/intuition-for-the-regularization-parameter-in-svm)
 
 [**Grid search for SVM Hyper parameters**](http://docs.opencv.org/3.0-beta/modules/ml/doc/support_vector_machines.html) **- in openCV.** [**Example in log space**](https://stackoverflow.com/questions/29128074/choosing-the-best-svm-kernel-type-and-parameters-using-opencv-on-python)
 
@@ -140,9 +132,9 @@
 * **However, no need for heuristics, computation-time is small, grid can be paralleled and we dont skip parameters.**
 * **Controlling search complexity using two tier grid, coarse grid and then fine tune.**
 
-### [**Overfitting advice for SVM:** ](https://stats.stackexchange.com/questions/35276/svm-overfitting-curse-of-dimensionality)
+## [**Overfitting advice for SVM:** ](https://stats.stackexchange.com/questions/35276/svm-overfitting-curse-of-dimensionality)
 
-* **Regularization parameter C -** [**penalty example**](http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html) ****
+* **Regularization parameter C -** [**penalty example**](http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html) _\*\*_
 * **In non linear kernels:**
   * **Kernel choice**
   * **Kernel parameters**
@@ -157,7 +149,7 @@
   * **Sigmoid is not valid under some parameters.**
   * **DON'T USE when the \#features is very large, use linear.**
 
-### [**RBF kernel**](https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf) **use cases**
+## [**RBF kernel**](https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf) **use cases**
 
 * **Number of instances &lt;&lt;  number of features. I.e, 38 instances over 7000 features.** 
 
@@ -169,6 +161,5 @@
 
 * **Number of instances &gt;&gt; number of features. Usually high dimensional mapping using non linear kernel. If we insist on liblinear, -s 2 leads to faster training.**
 
-[**Kdnuggets: When to use DL over SVM and other algorithms. Computationally expensive for a very small boost in accuracy.**](http://www.kdnuggets.com/2016/04/deep-learning-vs-svm-random-forest.html)  
-
+[**Kdnuggets: When to use DL over SVM and other algorithms. Computationally expensive for a very small boost in accuracy.**](http://www.kdnuggets.com/2016/04/deep-learning-vs-svm-random-forest.html)
 

@@ -1,6 +1,6 @@
 # Validation
 
-### **DATASETS RELIABILITY & CORRECTNESS** 
+## **DATASETS RELIABILITY & CORRECTNESS**
 
 **1.** [**Clever Hans effect**](https://thegradient.pub/nlps-clever-hans-moment-has-arrived/?fbclid=IwAR3vSx9EjXcSPhXU3Jyf7aWpTqhbVDARnh3qGpSw0rysv9rLeGyZFFCPnJA) **- in relations to cues left in the dataset that models find, instead of actually solving the defined task!**
 
@@ -10,10 +10,9 @@
 * **Assign random labels: How much does performance drop if ten percent of instances are relabeled randomly? How much with all random labels? If scores don't change much, the model probably didn't learning anything interesting about the task.**
 * **Randomly replace content words: How much does performance drop if all noun phrases and/or verb phrases are replaced with random noun phrases and verbs? If not much, the dataset may provide unintended non-content cues, such as sentence length or distribution of function words.**
 
-[**2. Paper**](https://arxiv.org/abs/1908.05267?fbclid=IwAR1xOHxCF3gewyijMYAfZJSysu88Y8lgRIT2OiG-jWQav4zcbPqGYSoFFkk)  
-****
+[**2. Paper**](https://arxiv.org/abs/1908.05267?fbclid=IwAR1xOHxCF3gewyijMYAfZJSysu88Y8lgRIT2OiG-jWQav4zcbPqGYSoFFkk)
 
-### **UNIT / DATA TESTS**
+## **UNIT / DATA TESTS**
 
 1. **A great :P** [**unit test and logging**](https://towardsdatascience.com/unit-testing-and-logging-for-data-science-d7fb8fd5d217?fbclid=IwAR3pze0DtV-2Q4L4ysPyjrInk7LB89mdiodxlEUTv4rv37ZoDzl_2I4ZbgA) **post on medium - it’s actually mine :\)**
 2. **A mind blowing** [**lecture**](https://www.youtube.com/watch?v=1fHGXOfiDO0&feature=youtu.be&fbclid=IwAR1bKByLgdYBDoBEr-e6Pw0Un5o0wvOg1yp4C-q4AoWZ1QuBEopTFFn0Gdw) **about unit testing your data using Voluptuous & engrade & TDDA lecture**
@@ -27,7 +26,7 @@
 10. **A good pytest** [**tutorial**](https://www.tutorialspoint.com/pytest/index.htm)
 11. [**Mock**](https://medium.com/@yasufumy/python-mock-basics-674c33de1ced)**,** [**mock 2**](https://medium.com/python-pandemonium/python-mocking-you-are-a-tricksy-beast-6c4a1f8d19b2)
 
-### **REGULATION FOR AI**
+## **REGULATION FOR AI**
 
 1. [**Preparing for EU regulations**](https://towardsdatascience.com/how-ai-leaders-should-prepare-for-the-looming-eu-regulations-99e9d4f4c039) **by MonaLabs**
 2. [**EU regulation DOC**](https://drive.google.com/file/d/1ZaBPsfor_aHKNeeyXxk9uJfTru747EOn/view)
@@ -37,7 +36,7 @@
    2. [**Second report by AI and data science committee** ](https://innovationisrael.org.il/sites/default/files/%D7%93%D7%95%D7%97%20%D7%A1%D7%95%D7%A4%D7%99%20%D7%A1%D7%99%D7%9B%D7%95%D7%9D%20%D7%95%D7%95%D7%A2%D7%93%D7%AA%20%D7%AA%D7%9C%D7%9D%20%D7%9C%D7%AA%D7%9B%D7%A0%D7%99%D7%AA%20%D7%9E%D7%95%D7%A4%20%D7%9C%D7%90%D7%95%D7%9E%D7%99%D7%AA%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20-.pdf)
    3. **Third by meizam leumi for AI systems in** [**ethics and regulation in israel**](https://machinelearning.co.il/4330/israelaiethicsreport/#more-4330)**,** [**lecture**](https://machinelearning.co.il/3349/googleai/)
 
-### **FAIRNESS, ACCOUNTABILITY & TRANSPARENCY ML**
+## **FAIRNESS, ACCOUNTABILITY & TRANSPARENCY ML**
 
 1. **FATML** [**website**](https://www.fatml.org/) **- The past few years have seen growing recognition that machine learning raises novel challenges for ensuring non-discrimination, due process, and understandability in decision-making. In particular, policymakers, regulators, and advocates have expressed fears about the potentially discriminatory impact of machine learning, with many calling for further technical research into the dangers of inadvertently encoding bias into automated decisions.**
 
@@ -50,9 +49,7 @@
 5. [**Bengio on ai**](https://www.wired.com/story/ai-pioneer-algorithms-understand-why/?fbclid=IwAR03uWEmVSjrOmP4dp77v_mdjPAXOsKPams_xsUOKameKbuzY8JN4brGC9o)
 6. [**Poisoning attacks on fairness**](https://arxiv.org/pdf/2004.07401.pdf) **- Research in adversarial machine learning has shown how the performance of machine learning models can be seriously compromised by injecting even a small fraction of poisoning points into the training data. We empirically show that our attack is effective not only in the white-box setting, in which the attacker has full access to the target model, but also in a more challenging black-box scenario in which the attacks are optimized against a substitute model and then transferred to the target model**
 
-#### 
-
-#### **FAIRNESS TOOLS**
+### **FAIRNESS TOOLS**
 
 1. [**PII tools, by gensim**](https://pii-tools.com/)
 2. [**Fair-learn**](https://github.com/fairlearn/fairlearn) **A Python package to assess and improve fairness of machine learning models.** ![](https://lh5.googleusercontent.com/ovdlVfds0jLUJzmmntUN70j5Qbsfq9hberlTf_evGgDKVGvFVHblHc-EbrbhmTviVRUVXJG9B2TlkcgSwO7vwt43y7tsia1gTjPJitTY2pCNAH_PWKxkrsXNcfKKHASqT3rW23FC)
@@ -71,9 +68,7 @@
 
 **M. Hardt, E. Price and N. Srebro \(2016\), Equality of Opportunity in Supervised Learning**
 
-### 
-
-### **INTERPRETABLE / EXPLAINABLE AI \(XAI\)**
+## **INTERPRETABLE / EXPLAINABLE AI \(XAI\)**
 
 ![](https://lh3.googleusercontent.com/gQgeZyxlXU37RydzNxXz1VitIZ-vdWr0YGy59EphP1cD8KqEE3VB58CGxxORvdmNuSLeRcRaytp7nJkFZveApPd4Fq8xEOV51ZSuXJsFdkU9EpL8d1cQRKzoCEpBjqARmiRD0NEV)
 
@@ -94,7 +89,7 @@
 ![](https://lh5.googleusercontent.com/KoycayTSdi3gu8cp6TrExpk-yJrhzlZfEiz1RzwtprTwJCnkz8fEpMhV9DlMpyPf-f_qqbfoVEQDABxGzQSwAjbX5S4p0dJL1dso_MdlO_SQRyInrUA3Lu70jdPHU5wZbKlmfvGZ)
 
 1. **\*\*\*** [**whitening a black box.**](https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/) **This is very good, includes eli5, lime, shap, many others.**
-2. **Book:** [**exploratory model analysis**](https://pbiecek.github.io/ema/) ****
+2. **Book:** [**exploratory model analysis**](https://pbiecek.github.io/ema/) _\*\*_
 3. [**Alibi-explain**](https://github.com/SeldonIO/alibi) **- White-box and black-box ML model explanation library.** [**Alibi**](https://docs.seldon.io/projects/alibi) **is an open source Python library aimed at machine learning model inspection and interpretation. The focus of the library is to provide high-quality implementations of black-box, white-box, local and global explanation methods for classification and regression models.**
 
 ![](https://lh3.googleusercontent.com/GclfWroRlYDUXz8j-72u-4_uudzQIUJbPR5BxUku_yE5cAOwfYL6rr1RH9nTbq6VXtaMv1KsnOr3DQTdEqFTT1CTdV6KCZXTqIoYmefzQEDtyrwAirvjbEhIQ2ARmwKGGJEczoSW)
@@ -132,7 +127,7 @@
 3. [**Trusting models**](https://arxiv.org/pdf/1602.04938.pdf)
 4. [**3. Interpret using uncertainty**](https://becominghuman.ai/using-uncertainty-to-interpret-your-model-67a97c28fea5)
 5. [**Keras-vis**](https://github.com/raghakot/keras-vis) **for cnns, 3 methods, activation maximization, saliency and class activation maps**
-6. [**The notebook!**](https://github.com/FraPochetti/KagglePlaygrounds/blob/master/InterpretableML.ipynb) ****[**Blog**](https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/)
+6. [**The notebook!**](https://github.com/FraPochetti/KagglePlaygrounds/blob/master/InterpretableML.ipynb) **\*\*\[**Blog\*\*\]\([https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/](https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/)\)
 7. [**More resources!**](https://docs.google.com/spreadsheets/d/1uQy6a3BfxOXI8Nh3ECH0bqqSc95zpy4eIp_9JAMBkKg/edit#gid=0)
 8. [**Visualizing the impact of feature attribution baseline**](https://distill.pub/2020/attribution-baselines/) **- Path attribution methods are a gradient-based way of explaining deep models. These methods require choosing a hyperparameter known as the baseline input. What does this hyperparameter mean, and how important is it? In this article, we investigate these questions using image classification networks as a case study. We discuss several different ways to choose a baseline input and the assumptions that are implicit in each baseline. Although we focus here on path attribution methods, our discussion of baselines is closely connected with the concept of missingness in the feature space - a concept that is critical to interpretability research.**
 9. **WHAT IF TOOL - GOOGLE,** [**notebook**](https://colab.research.google.com/github/PAIR-code/what-if-tool/blob/master/WIT_Smile_Detector.ipynb)**,** [**walkthrough**](https://pair-code.github.io/what-if-tool/learn/tutorials/walkthrough/)
@@ -140,18 +135,13 @@
 11. [**Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead**](https://arxiv.org/abs/1811.10154) **- “trying to \textit{explain} black box models, rather than creating models that are \textit{interpretable} in the first place, is likely to perpetuate bad practices and can potentially cause catastrophic harm to society. There is a way forward -- it is to design models that are inherently interpretable. This manuscript clarifies the chasm between explaining black boxes and using inherently interpretable models, outlines several key reasons why explainable black boxes should be avoided in high-stakes decisions, identifies challenges to interpretable machine learning, and provides several example applications where interpretable models could potentially replace black box models in criminal justice, healthcare, and computer vision.”**
 12. [**Using genetic algorithms**](https://towardsdatascience.com/interpreting-black-box-machine-learning-models-with-genetic-algorithms-a803bfd134cb)
 13. [ **Google’s what-if tool**](https://pair-code.github.io/what-if-tool/demos/image.html) **from** [**PAIR**](https://pair.withgoogle.com/)
-14. 
-### **WHY WE SHOULDN’T TRUST MODELS**
+14. **WHY WE SHOULDN’T TRUST MODELS**
+15. [**Clever Hans effect for NLP**](https://thegradient.pub/nlps-clever-hans-moment-has-arrived/) 1. **Datasets need more love** 2. **Datasets ablation and public beta** 3. **Inter-prediction agreement**
+16. **Behavioral testing and CHECKLIST**
+    1. [**Blog**](https://amitness.com/2020/07/checklist/)**,** [**Youtube**](https://www.youtube.com/watch?v=L3gaWctPg6E)**,** [**paper**](https://arxiv.org/pdf/2005.04118.pdf)**,** [**git**](https://github.com/marcotcr/checklist)
+    2. [**Yonatan hadar on the subject in hebrew**](https://www.facebook.com/groups/MDLI1/permalink/1627671704063538/)
 
-1. [**Clever Hans effect for NLP**](https://thegradient.pub/nlps-clever-hans-moment-has-arrived/)
-   1. **Datasets need more love**
-   2. **Datasets ablation and public beta**
-   3. **Inter-prediction agreement**
-2. **Behavioral testing and CHECKLIST**
-   1. [**Blog**](https://amitness.com/2020/07/checklist/)**,** [**Youtube**](https://www.youtube.com/watch?v=L3gaWctPg6E)**,** [**paper**](https://arxiv.org/pdf/2005.04118.pdf)**,** [**git**](https://github.com/marcotcr/checklist)
-   2. [**Yonatan hadar on the subject in hebrew**](https://www.facebook.com/groups/MDLI1/permalink/1627671704063538/)
-
-### **DEBIASING MODELS**
+## **DEBIASING MODELS**
 
 1. [**Adversarial removal of demographic features**](https://arxiv.org/abs/1808.06640) **- “We show that demographic information of authors is encoded in -- and can be recovered from -- the intermediate representations learned by text-based neural classifiers. The implication is that decisions of classifiers trained on textual data are not agnostic to -- and likely condition on -- demographic attributes. “ “we explore several techniques to improve the effectiveness of the adversarial component. Our main conclusion is a cautionary one: do not rely on the adversarial training to achieve invariant representation to sensitive features.”**  
 2. [**Null It Out: Guarding Protected Attributes by Iterative Nullspace Projection**](https://arxiv.org/abs/2004.07667) **\(paper\) ,** [**github**](https://github.com/shauli-ravfogel/nullspace_projection)**,** [**presentation**](https://docs.google.com/presentation/d/1Xi5HLpvvRE8BqcNBZMyPS4gBa0i0lqZvRebz-AZxAPA/edit) **by Shauli et al. - removing biased information such as gender from an embedding space using nullspace projection. The objective is this: give a representation of text, for example BERT embeddings of many resumes/CVs, we want to achieve a state where a certain quality, for example a gender representation of the person who wrote this resume is not encoded in X. they used the light version definition for “not encoded”, i.e., you cant predict the quality from the representation with a higher than random score, using a linear model. I.e., every linear model you will train, will not be able to predict the person’s gender out of the embedding space and will reach a 50% accuracy. This is done by an iterative process that includes. 1. Linear model training to predict the quality of the concept from the representation. 2. Performing ‘projection to null space’ for the linear classifier, this is an acceptable linear algebra calculation that has a meaning of zeroing the representation from the projection on the separation place that the linear model is representing, making the model useless. I.e., it will always predict the zero vector. This is done iteratively on the neutralized output, i.e., in the second iteration we look for an alternative way to predict the gender out of X, until we reach 50% accuracy \(or some other metric you want to measure\) at this point we have neutralized all the linear directions in the embedding space, that were predictive to the gender of the author.**
@@ -166,24 +156,23 @@
 
 1. [**Removing ‘gender bias using pair mean pca**](https://stackoverflow.com/questions/48019843/pca-on-word2vec-embeddings)
 2. [**Bias detector by intuit**](https://github.com/intuit/bias-detector) **- Based on first and last name/zip code the package analyzes the probability of the user belonging to different genders/races. Then, the model predictions per gender/race are compared using various bias metrics.**
-3. 4. 
-### 
+3. 1. 
 
-### **PRIVACY**
+## **PRIVACY**
 
 1. [**Privacy in DataScience**](http://www.unsupervised-podcast.xyz/ab55d406) **podcast**
 2. [**Fairness in AI**](http://www.unsupervised-podcast.xyz/5d7fc118)
 
-### **DIFFERENTIAL PRIVACY**
+## **DIFFERENTIAL PRIVACY**
 
 1. [**Differential privacy**](https://georgianpartners.com/what-is-differential-privacy/) **has emerged as a major area of research in the effort to prevent the identification of individuals and private data. It is a mathematical definition for the privacy loss that results to individuals when their private information is used to create AI products. It works by injecting noise into a dataset, during a machine learning training process, or into the output of a machine learning model, without introducing significant adverse effects on data analysis or model performance. It achieves this by calibrating the noise level to the sensitivity of the algorithm. The result is a differentially private dataset or model that cannot be reverse engineered by an attacker, while still providing useful information. Uses BOTLON & EPSILON**
 2. [**youtube**](https://www.youtube.com/watch?v=gI0wk1CXlsQ&feature=emb_title)
 
-### **ANONYMIZATION**
+## **ANONYMIZATION**
 
 1. [**Using NER \(omri mendels\)**](https://towardsdatascience.com/nlp-approaches-to-data-anonymization-1fb5bde6b929)
 
-### **DE-ANONYMIZATION**
+## **DE-ANONYMIZATION**
 
 1. **GPT2 -** [**Of language datasets** ](https://arxiv.org/pdf/2012.07805.pdf)![](https://lh5.googleusercontent.com/XkrwLQ2tm0xAA3bvGOQ5H3WkwWOgSwpzFal4rvRrTmcB6vzSrbGO-OK8Q8vxdQ4zhbT__MJyfbpwnIesc5BPmCdhr210Vlqy7pjipEbgezxW9WcP1CxL7uQsPQuIgmGCr1LHJY9w)
 

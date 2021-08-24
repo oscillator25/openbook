@@ -3,7 +3,7 @@
 **Numpy Blas:**
 
 1. [**How do i know which version of blas is installed**](https://stackoverflow.com/questions/37184618/find-out-if-which-blas-library-is-used-by-numpy)
-2. [**Benchmark OpenBLAS, Intel MKL vs ATLAS**](https://github.com/tmolteno/necpp/issues/18) ****
+2. [**Benchmark OpenBLAS, Intel MKL vs ATLAS**](https://github.com/tmolteno/necpp/issues/18) _\*\*_
 
 ![](https://lh5.googleusercontent.com/podTyc9Z0eDjObB4aW6-2AVWxhlG3pE8M3ccWBUj3oIGDgB6uWmXlt96aiuVAm9vvw33iShedQ1Gn_w6J3qhRGKThnZH-Puy5ZfoYmHL3GFTMxxUh_EIXOCtOTqjQHdqrjCZzh3N)
 
@@ -21,9 +21,7 @@
 **Cloud providers:**
 
 * [**Part 1**](https://rare-technologies.com/machine-learning-hardware-benchmarks/)**,** [**part 2 y gensim**](https://rare-technologies.com/machine-learning-benchmarks-hardware-providers-gpu-part-2/)
-* 
-**Datasets:** 
-
+* **Datasets:**
 * [**EFF FF Benchmarks in AI**](https://www.eff.org/ai/metrics)
 
 **Hardware:**
@@ -37,13 +35,13 @@
 **Platforms**
 
 * [**Cntk vs tensorflow**](http://minimaxir.com/2017/06/keras-cntk/)
-* [**CNTK, TEnsor, torch, etc on cpu and gpu**](https://arxiv.org/pdf/1608.07249.pdf) ****
+* [**CNTK, TEnsor, torch, etc on cpu and gpu**](https://arxiv.org/pdf/1608.07249.pdf) _\*\*_
 
 **Algorithms:**
 
 * [**Comparing**](https://martin-thoma.com/comparing-classifiers/) **accuracy, speed, memory and 2D visualization of classifiers:**
 
-[**SVM,**](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) ****[**k-nearest neighbors,**](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html) ****[**Random Forest,**](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) ****[**AdaBoost Classifier,**](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html) ****[**Gradient Boosting,**](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html) ****[**Naive, Bayes,**](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html) ****[**LDA,**](http://scikit-learn.org/0.16/modules/generated/sklearn.lda.LDA.html) ****[**QDA,**](http://scikit-learn.org/0.16/modules/generated/sklearn.qda.QDA.html) ****[**RBMs,**](http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.BernoulliRBM.html) ****[**Logistic Regression,**](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) ****[**RBM**](http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.BernoulliRBM.html) **+ Logistic Regression Classifier**
+[**SVM,**](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) **\*\*\[**k-nearest neighbors,**\]\(**[http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)**\) \*\***[**Random Forest,**](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) **\*\*\[**AdaBoost Classifier,**\]\(**[http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html)**\) \*\***[**Gradient Boosting,**](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html) **\*\*\[**Naive, Bayes,**\]\(**[http://scikit-learn.org/stable/modules/generated/sklearn.naive\_bayes.GaussianNB.html](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html)**\) \*\***[**LDA,**](http://scikit-learn.org/0.16/modules/generated/sklearn.lda.LDA.html) **\*\*\[**QDA,**\]\(**[http://scikit-learn.org/0.16/modules/generated/sklearn.qda.QDA.html](http://scikit-learn.org/0.16/modules/generated/sklearn.qda.QDA.html)**\) \*\***[**RBMs,**](http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.BernoulliRBM.html) **\*\*\[**Logistic Regression,**\]\(**[http://scikit-learn.org/stable/modules/generated/sklearn.linear\_model.LogisticRegression.html](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)**\) \*\***[**RBM**](http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.BernoulliRBM.html) **+ Logistic Regression Classifier**
 
 * [**LSTM vs cuDNN LS1TM**](https://chainer.org/general/2017/03/15/Performance-of-LSTM-Using-CuDNN-v5.html) **- batch size of power 2 matters, the latter is faster.**
 

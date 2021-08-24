@@ -30,16 +30,13 @@
 
 1. [**Affine warp**](https://github.com/ahwillia/affinewarp)**, a neural net with time warping -  as part of the following manuscript, which focuses on analysis of large-scale neural recordings \(though this code can be also be applied to many other data types\)**
 2. [**Neural warp**](https://github.com/josifgrabocka/neuralwarp) **-** [**NeuralWarp**](https://arxiv.org/pdf/1812.08306.pdf)**: Time-Series Similarity with Warping Networks**
-3. 
-[**A great introduction into time series**](https://medium.com/making-sense-of-data/time-series-next-value-prediction-using-regression-over-a-rolling-window-228f0acae363) **- “The approach is to come up with a list of features that captures the temporal aspects so that the auto correlation information is not lost.” basically tells us to take sequence features and create \(auto\)-correlated new variables using a time window, i.e., “Time series forecasts as regression that factor in autocorrelation as well.”. we can transform raw features into other type of features that explain the relationship in time between features. we measure success using loss functions, MAE RMSE MAPE RMSEP AC-ERROR-RATE**  
+3. [**A great introduction into time series**](https://medium.com/making-sense-of-data/time-series-next-value-prediction-using-regression-over-a-rolling-window-228f0acae363) **- “The approach is to come up with a list of features that captures the temporal aspects so that the auto correlation information is not lost.” basically tells us to take sequence features and create \(auto\)-correlated new variables using a time window, i.e., “Time series forecasts as regression that factor in autocorrelation as well.”. we can transform raw features into other type of features that explain the relationship in time between features. we measure success using loss functions, MAE RMSE MAPE RMSEP AC-ERROR-RATE**  
 
-
-[**Interesting idea**](http://blog.kaggle.com/2016/02/03/rossmann-store-sales-winners-interview-2nd-place-nima-shahbazi/) **on how to define ‘time series’ dummy variables that utilize beginning\end of certain holiday events, including important information on what NOT to filter even if it seems insignificant, such as zero sales that may indicate some relationship to many sales the following day.**  
-
+[**Interesting idea**](http://blog.kaggle.com/2016/02/03/rossmann-store-sales-winners-interview-2nd-place-nima-shahbazi/) **on how to define ‘time series’ dummy variables that utilize beginning\end of certain holiday events, including important information on what NOT to filter even if it seems insignificant, such as zero sales that may indicate some relationship to many sales the following day.**
 
 ![](https://lh6.googleusercontent.com/hUyX6IBOvCb8hrjHVG8edxDWmnHLwe6J2hf-_cGXhpSuhWAGPg7ahENwlXftItTY6kn1rw4GZxeGBwqJRa51XAQxTu4zZD_p_S93yCZvaXlU6QJJPV8jJHdq8HVVX88sOE95QBo_)
 
-[**Time series patterns:**  ](https://www.otexts.org/fpp/2/1)
+[**Time series patterns:** ](https://www.otexts.org/fpp/2/1)
 
 * **A trend \(a,b,c\) exists when there is a long-term increase or decrease in the data.** 
 * **A seasonal \(a - big waves\) pattern occurs when a time series is affected by seasonal factors such as the time of the year or the day of the week. The monthly sales induced by the change in cost at the end of the calendar year.**
@@ -74,8 +71,7 @@
 * **Calendrical adjustments**
 * **Inflation adjustment**
 
-[**Transforming time series data to tabular \(in order to use tabular based approach\)**](https://towardsdatascience.com/approaching-time-series-with-a-tree-based-model-87c6d1fb6603)  
-****
+[**Transforming time series data to tabular \(in order to use tabular based approach\)**](https://towardsdatascience.com/approaching-time-series-with-a-tree-based-model-87c6d1fb6603)
 
 ### **SPLITTING TIME SERIES DATA**
 
@@ -95,11 +91,11 @@
 
 ### [**Rolling window analysis**](https://link.springer.com/chapter/10.1007%2F978-0-387-32348-0_9)
 
- **“compute parameter estimates over a rolling window of a fixed size through the sample. If the parameters are truly constant over the entire sample, then the estimates over the rolling windows should not be too different. If the parameters change at some point during the sample, then the rolling estimates should capture this instability”**
+**“compute parameter estimates over a rolling window of a fixed size through the sample. If the parameters are truly constant over the entire sample, then the estimates over the rolling windows should not be too different. If the parameters change at some point during the sample, then the rolling estimates should capture this instability”**
 
 ### [**Moving average window**](https://www.otexts.org/fpp/6/2)
 
- **estimate the trend cycle**
+**estimate the trend cycle**
 
 * **3-5-7-9? If its too large its going to flatten the curve, too low its going to be similar to the actual curve.**
 * **two tier moving average, first 4 then 2 on the resulted moving average.**
@@ -125,24 +121,22 @@
 3. **Seasonality. The optional repeating patterns or cycles of behavior over time.**
 4. **Noise. The optional variability in the observations that cannot be explained by the model.**
 
-**All time series have a level, most have noise, and the trend and seasonality are optional.**  
+**All time series have a level, most have noise, and the trend and seasonality are optional.**
 
-
-**One step forecast using a window of “1” and a typical sample “time, measure1, measure2”:** 
+**One step forecast using a window of “1” and a typical sample “time, measure1, measure2”:**
 
 * **linear/nonlinear classifiers: predict a single output value - using the t-1 previous line, i.e., “measure1 t, measure 2 t, measure 1 t+1, measure 2 t+1 \(as the class\)”** 
 * **Neural networks: predict multiple output values, i.e., “measure1 t, measure 2 t, measure 1 t+1\(class1\), measure 2 t+1\(class2\)”** 
 
 **One-Step Forecast: This is where the next time step \(t+1\) is predicted.**
 
-**Multi-Step Forecast: This is where two or more future time steps are to be predicted.**  
+**Multi-Step Forecast: This is where two or more future time steps are to be predicted.**
 
-
-**Multi-step forecast using a window of “1” and a typical sample “time, measure1”, i.e., using the current value input we label it as the two future input labels:** 
+**Multi-step forecast using a window of “1” and a typical sample “time, measure1”, i.e., using the current value input we label it as the two future input labels:**
 
 * **“measure1 t, measure1 t+1\(class\) , measure1 t+2\(class1\)”** 
 
-[**This article explains**](http://web.engr.oregonstate.edu/~tgd/publications/mlsd-ssspr.pdf) **about ML Methods for Sequential Supervised Learning - Six methods that have been applied to solve sequential supervised learning problems:** 
+[**This article explains**](http://web.engr.oregonstate.edu/~tgd/publications/mlsd-ssspr.pdf) **about ML Methods for Sequential Supervised Learning - Six methods that have been applied to solve sequential supervised learning problems:**
 
 1. **sliding-window methods - converts a sequential supervised problem into a classical supervised problem**
 2. **recurrent sliding windows**
@@ -152,7 +146,7 @@
 6. **conditional random fields**
 7. **graph transformer networks**
 
-##  ****
+## _\*\*_
 
 ### **STATIONARY TIME SERIES**
 
@@ -192,7 +186,7 @@
 
 1. [**Using kalman filters**](https://www.youtube.com/watch?v=CaCcOwJPytQ) **- explains the concept etc, 1 out of 55 videos.**
 
-### [**Kalman filters in matlab**](https://www.youtube.com/watch?v=4OerJmPpkRg) ****
+### [**Kalman filters in matlab**](https://www.youtube.com/watch?v=4OerJmPpkRg) _\*\*_
 
 ### [**LTSM for time series**](http://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/)
 
@@ -210,15 +204,14 @@
 ### **CLASSIFICATION**
 
 1. [**Stackexchange**](https://stats.stackexchange.com/questions/131281/dynamic-time-warping-clustering/131284) **- Yes, you can use DTW approach for classification and clustering of time series. I've compiled the following resources, which are focused on this very topic \(I've recently answered a similar question, but not on this site, so I'm copying the contents here for everybody's convenience\):**
-
-* **UCR Time Series Classification/Clustering:** [**main page**](http://www.cs.ucr.edu/~eamonn/time_series_data)**,** [**software page**](http://www.cs.ucr.edu/~eamonn/UCRsuite.html) **and** [**corresponding paper**](http://www.cs.ucr.edu/~eamonn/SIGKDD_trillion.pdf)
-* **Time Series Classification and Clustering with Python:** [**a blog post**](http://alexminnaar.com/2014/04/16/Time-Series-Classification-and-Clustering-with-Python.html)
-* **Capital Bikeshare: Time Series Clustering:** [**another blog post**](http://ofdataandscience.blogspot.com/2013/03/capital-bikeshare-time-series-clustering.html)
-* **Time Series Classification and Clustering:** [**ipython notebook**](http://nbviewer.ipython.org/github/alexminnaar/time-series-classification-and-clustering/blob/master/Time%20Series%20Classification%20and%20Clustering.ipynb)
-* **Dynamic Time Warping using rpy and Python:** [**another blog post**](https://nipunbatra.wordpress.com/2013/06/09/dynamic-time-warping-using-rpy-and-python)
-* **Mining Time-series with Trillions of Points: Dynamic Time Warping at Scale:** [**another blog post**](http://practicalquant.blogspot.com/2012/10/mining-time-series-with-trillions-of.html)
-* **Time Series Analysis and Mining in R \(to add R to the mix\):** [**yet another blog post**](http://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r)
-* **And, finally, two tools implementing/supporting DTW, to top it off:** [**R package**](http://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r) **and** [**Python module**](http://mlpy.sourceforge.net/)
+2. **UCR Time Series Classification/Clustering:** [**main page**](http://www.cs.ucr.edu/~eamonn/time_series_data)**,** [**software page**](http://www.cs.ucr.edu/~eamonn/UCRsuite.html) **and** [**corresponding paper**](http://www.cs.ucr.edu/~eamonn/SIGKDD_trillion.pdf)
+3. **Time Series Classification and Clustering with Python:** [**a blog post**](http://alexminnaar.com/2014/04/16/Time-Series-Classification-and-Clustering-with-Python.html)
+4. **Capital Bikeshare: Time Series Clustering:** [**another blog post**](http://ofdataandscience.blogspot.com/2013/03/capital-bikeshare-time-series-clustering.html)
+5. **Time Series Classification and Clustering:** [**ipython notebook**](http://nbviewer.ipython.org/github/alexminnaar/time-series-classification-and-clustering/blob/master/Time%20Series%20Classification%20and%20Clustering.ipynb)
+6. **Dynamic Time Warping using rpy and Python:** [**another blog post**](https://nipunbatra.wordpress.com/2013/06/09/dynamic-time-warping-using-rpy-and-python)
+7. **Mining Time-series with Trillions of Points: Dynamic Time Warping at Scale:** [**another blog post**](http://practicalquant.blogspot.com/2012/10/mining-time-series-with-trillions-of.html)
+8. **Time Series Analysis and Mining in R \(to add R to the mix\):** [**yet another blog post**](http://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r)
+9. **And, finally, two tools implementing/supporting DTW, to top it off:** [**R package**](http://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r) **and** [**Python module**](http://mlpy.sourceforge.net/)
 
 ### **CLUSTERING TS**
 
@@ -258,9 +251,7 @@
 19. [**Graph-based Anomaly Detection and Description: A Survey**](https://arxiv.org/pdf/1404.4679.pdf)
 20. [**Time2vec**](https://towardsdatascience.com/time2vec-for-time-series-features-encoding-a03a4f3f937e)**,** [**paper**](https://arxiv.org/pdf/1907.05321.pdf) **\(for deep learning, as a layer\)**
 
-### 
-
-### **Dynamic Time Warping \(DTW\)** 
+### **Dynamic Time Warping \(DTW\)**
 
 **DTW, ie., how to compute a better distance for two time series.**
 
@@ -268,7 +259,7 @@
 
 **Myth 1: The ability of DTW to handle sequences of different lengths is a great advantage, and therefore the simple lower bound that requires different-length sequences to be reinterpolated to equal length is of limited utility \[10\]\[19\]\[21\]. In fact, as we will show, there is no evidence in the literature to suggest this, and extensive empirical evidence presented here suggests that comparing sequences of different lengths and reinterpolating them to equal length produce no statistically significant difference in accuracy or precision/recall.  
 Myth 2: Constraining the warping paths is a necessary evil that we inherited from the speech processing community to make DTW tractable, and that we should find ways to speed up DTW with no \(or larger\) constraints\[19\]. In fact, the opposite is true. As we will show, the 10% constraint on warping inherited blindly from the speech processing community is actually too large for real world data mining.  
-Myth 3: There is a need \(and room\) for improvements in the speed of DTW for data mining applications. In fact, as we will show here, if we use a simple lower bounding technique, DTW is essentially O\(n\) for data mining applications. At least for CPU time, we are almost certainly at the asymptotic limit for speeding up DTW.** 
+Myth 3: There is a need \(and room\) for improvements in the speed of DTW for data mining applications. In fact, as we will show here, if we use a simple lower bounding technique, DTW is essentially O\(n\) for data mining applications. At least for CPU time, we are almost certainly at the asymptotic limit for speeding up DTW.**
 
 1. [**Youtube - explains everything**](https://www.youtube.com/watch?v=_K1OsqCicBY)
 2. [**Python code**](https://github.com/alexminnaar/time-series-classification-and-clustering) **with a** [**good tutorial.**](http://nbviewer.ipython.org/github/alexminnaar/time-series-classification-and-clustering/blob/master/Time%20Series%20Classification%20and%20Clustering.ipynb)
@@ -280,17 +271,15 @@ Myth 3: There is a need \(and room\) for improvements in the speed of DTW for da
 ![](https://lh3.googleusercontent.com/aJYNIn2aCXwoZxIIcHbm-X03kwzJUqTBLQ96UPVUex_nRsO4eO1NuCWppkiMazcm5IQKUcnS9i2h2usU9GKLUAFIToRWxyx36W6SydTl4J1tVTd7vzLaywdvedmPSOQnmDj1sPZj)
 
 1. **\(duplicate above in classification\)** [**Stackexchange**](https://stats.stackexchange.com/questions/131281/dynamic-time-warping-clustering/131284) **- Yes, you can use DTW approach for classification and clustering of time series. I've compiled the following resources, which are focused on this very topic \(I've recently answered a similar question, but not on this site, so I'm copying the contents here for everybody's convenience\):**
-
-* **UCR Time Series Classification/Clustering:** [**main page**](http://www.cs.ucr.edu/~eamonn/time_series_data)**,** [**software page**](http://www.cs.ucr.edu/~eamonn/UCRsuite.html) **and** [**corresponding paper**](http://www.cs.ucr.edu/~eamonn/SIGKDD_trillion.pdf)
-* **Time Series Classification and Clustering with Python:** [**a blog post**](http://alexminnaar.com/2014/04/16/Time-Series-Classification-and-Clustering-with-Python.html)
-* **Capital Bikeshare: Time Series Clustering:** [**another blog post**](http://ofdataandscience.blogspot.com/2013/03/capital-bikeshare-time-series-clustering.html)
-* **Time Series Classification and Clustering:** [**ipython notebook**](http://nbviewer.ipython.org/github/alexminnaar/time-series-classification-and-clustering/blob/master/Time%20Series%20Classification%20and%20Clustering.ipynb)
-* **Dynamic Time Warping using rpy and Python:** [**another blog post**](https://nipunbatra.wordpress.com/2013/06/09/dynamic-time-warping-using-rpy-and-python)
-* **Mining Time-series with Trillions of Points: Dynamic Time Warping at Scale:** [**another blog post**](http://practicalquant.blogspot.com/2012/10/mining-time-series-with-trillions-of.html)
-* **Time Series Analysis and Mining in R \(to add R to the mix\):** [**yet another blog post**](http://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r)
-* **And, finally, two tools implementing/supporting DTW, to top it off:** [**R package**](http://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r) **and** [**Python module**](http://mlpy.sourceforge.net/)
-
-1. [**Time Series Hierarchical Clustering using Dynamic Time Warping in Python**](https://towardsdatascience.com/time-series-hierarchical-clustering-using-dynamic-time-warping-in-python-c8c9edf2fda5) **-** [**notebook**](https://github.com/avchauzov/_articles/blob/master/1.1.trajectoriesClustering.ipynb)
-2. [**K-Means with DTW, probably fixed length vectors, using tslearn**](https://towardsdatascience.com/how-to-apply-k-means-clustering-to-time-series-data-28d04a8f7da3)
-3. **\(nice\)** [**With time series**](https://medium.com/@shachiakyaagba_41915/dynamic-time-warping-with-time-series-1f5c05fb8950)
+2. **UCR Time Series Classification/Clustering:** [**main page**](http://www.cs.ucr.edu/~eamonn/time_series_data)**,** [**software page**](http://www.cs.ucr.edu/~eamonn/UCRsuite.html) **and** [**corresponding paper**](http://www.cs.ucr.edu/~eamonn/SIGKDD_trillion.pdf)
+3. **Time Series Classification and Clustering with Python:** [**a blog post**](http://alexminnaar.com/2014/04/16/Time-Series-Classification-and-Clustering-with-Python.html)
+4. **Capital Bikeshare: Time Series Clustering:** [**another blog post**](http://ofdataandscience.blogspot.com/2013/03/capital-bikeshare-time-series-clustering.html)
+5. **Time Series Classification and Clustering:** [**ipython notebook**](http://nbviewer.ipython.org/github/alexminnaar/time-series-classification-and-clustering/blob/master/Time%20Series%20Classification%20and%20Clustering.ipynb)
+6. **Dynamic Time Warping using rpy and Python:** [**another blog post**](https://nipunbatra.wordpress.com/2013/06/09/dynamic-time-warping-using-rpy-and-python)
+7. **Mining Time-series with Trillions of Points: Dynamic Time Warping at Scale:** [**another blog post**](http://practicalquant.blogspot.com/2012/10/mining-time-series-with-trillions-of.html)
+8. **Time Series Analysis and Mining in R \(to add R to the mix\):** [**yet another blog post**](http://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r)
+9. **And, finally, two tools implementing/supporting DTW, to top it off:** [**R package**](http://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r) **and** [**Python module**](http://mlpy.sourceforge.net/)
+10. [**Time Series Hierarchical Clustering using Dynamic Time Warping in Python**](https://towardsdatascience.com/time-series-hierarchical-clustering-using-dynamic-time-warping-in-python-c8c9edf2fda5) **-** [**notebook**](https://github.com/avchauzov/_articles/blob/master/1.1.trajectoriesClustering.ipynb)
+11. [**K-Means with DTW, probably fixed length vectors, using tslearn**](https://towardsdatascience.com/how-to-apply-k-means-clustering-to-time-series-data-28d04a8f7da3)
+12. **\(nice\)** [**With time series**](https://medium.com/@shachiakyaagba_41915/dynamic-time-warping-with-time-series-1f5c05fb8950)
 
